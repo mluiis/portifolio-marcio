@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+* 
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.toggle {
+
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	background: #000 url('img/menu.png');
+	background-size: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+z-index: 1000;
+}
+.toggle.active {
+background: black url('img/close.png');
+	background-size: 25px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+	 rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+	 rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+section {
+
+	padding: 100px;
+	min-height: 100vh;
+}
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+}
+.banner .img1 {
+
+	position: absolute;
+	top: 0;	
+	left: 0;
+	width: 500px;
+	height: 100%;
+}
+
+.banner .img1 img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+
+}
+.banner .titulo, .barra {
+position: absolute;
+top: 0;
+right: 0;
+width:calc(100% - 500px);
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 100px;
+
+}
+
+.logo {
+position: absolute;
+top: 40px;
+left: 100px;
+font-size: 1.2em;
+text-transform: uppercase;
+letter-spacing: 1px;
+background:  #201b2c;
+color: whitesmoke;
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+	 rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+	 rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	 padding: 0 5px;
+
+}
+
+.banner .titulo h4 {
+
+	font-size: 1.5em;
+	color: #201b2c ;
+	font-weight: 300;
+}
+.banner .titulo h4 span {
+color:  #51edaf;
+font-size:1.5em ;
+font-weight: 900;
+
+}
+
+.banner .titulo .display-4 {
+
+	font-size: 3em;
+	color:#201b2c;
+	font-weight: 900;
+}
+p {
+	font-size: 1.1em;
+	margin: 20px 0;
+	font-size: 300;
+text-align: justify;
+}
+.btn {
+	background:  #51edaf;
+	color: whitesmoke;
+	padding: 10px 30px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 2px;
+	box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+	outline: none;
+	border: none;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	background:  #77ffc8;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 2px;
+	box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+	
+}
+}
+
+
+.btn:active {
+  box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+  	outline: none;
+	border: none;
+}
+.barra {
+	background: #201b2c;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	padding: 40px;
+	z-index: 100;
+	right: -100%;
+}
+.barra.active {
+
+	right: 0;
+}
+.barra ul {
+display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	list-style: none;
+
+}
+
+.barra ul li {
+
+	list-style: none;
+}
+
+.barra ul li a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 2em;
+	margin: 10px 0;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.barra ul li a:hover {
+color: #51edaf;
+
+}
+.icon {
+	position: absolute;
+	left: 100px;
+	bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		font-size: 4em;
+	
+
+}
+.icon a i {
+	transform: scale(0.5);
+	opacity: 0.6;
+	color:  #201b2c;
+}
+.icon a i:hover {
+
+
+transform: scale(0.6);
+  cursor: pointer;
+  color: #51edaf;
+  opacity: 1;
+}
+
+.tituloCurso {
+width: 100%;
+text-align: center;
+
+}
+.tituloCurso h2 {
+	color:#51edaf;
+	font-weight: 700;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 3em;
+	
+}
+
+.tituloCurso p {
+
+	text-align: center;
+	display: inline-block;
+	color: whitesmoke;
+}
+.tituloCurso h2::before {
+
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	width: 60px;
+	height: 4px;
+	background: whitesmoke;
+
+}
+.curso {
+	background: #201b2c;
+}
+
+
+.curso .servicos {
+
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.curso .servicos .tarefa {
+
+	padding: 40px 20px;
+	max-width: 340px;
+	margin: 20px;
+	transition: 0.5s;
+	text-align: center;
+	background:#2e273f;
+	color: whitesmoke;
+	border-radius: 22px;
+
+
+}
+.curso .servicos .tarefa:hover {
+	background: #51edaf ;
+	color: black;
+
+}
+
+.curso .servicos .tarefa img {
+	max-width: 64px;
+	transition: 0.5s;
+}
+
+.curso .servicos .tarefa img:hover {
+
+	filter: invert(1);
+}
+.curso .servicos .tarefa h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 600;
+	text-shadow: 1px 1px 1px;
+	transition: 0.5s;
+
+}
+.curso .servicos .tarefa h2:hover {
+color: black;
+
+}
+
+.curso .servicos .tarefa p {
+	margin: 0;
+	font-size: 1em;
+	transition: 0.5s;
+}
+
+.tituloProjeto p {
+
+	text-align: center;
+	color: black;
+	text-align: center;
+}
+
+.tituloProjeto h2 {
+	text-align: center;
+	width: 100%;
+	color:#51edaf;
+	font-weight: 700;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 3em;
+	
+}
+.tituloProjeto h2::before {
+
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	width: 60px;
+	height: 4px;
+	background: black
+   }
+
+ .projetos .project {
+
+ 	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+ }
+
+  .job, .job2 {
+
+  border-radius: 22px;
+ box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  margin: 20px;
+  transition: all 0.3s ease-out;
+  max-width: 340px;
+  color: black;
+  border: 1px solid whitesmoke;
+  backdrop-filter: blur(20px);
+    transform: translateX(10px);
+    cursor: pointer;
+    padding: 40px 20px;
+
+}
+
+.job:hover {
+
+	background: #51edaf;
+	transition: 0.5s;
+
+}
+
+
+.project .job h2 {
+
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+}
+.project .job h2:hover {
+
+	transition: 0.5s;
+
+}
+
+.job a {
+	text-decoration: none;
+	color: black;
+
+}
+
+.job a:hover {
+	transition: 0.5s;
+	filter: invert(1);
+	text-decoration: none;
+
+
+}
+
+.image {
+	padding: 20px;
+	transition: 0.5s;
+	margin: auto;
+	display: block;
+}
+
+.image:hover {
+	filter: invert(1);
+	transition: 0.5s;
+}
+.project .job p {
+	font-size: 1em;
+	text-align: center;
+}
+
+/*Inicio de contatos*/
+
+.contatos {
+
+	background: #201b2c;
+}
+
+}
+.tituloContatos{
+
+	width: 100%;
+	text-align: center;
+}
+.tituloContatos h2 {
+	text-align: center;
+	width: 100%;
+	color:#51edaf;
+	font-weight: 700;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 3em;
+}
+.tituloContatos h2::before {
+
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	width: 60px;
+	height: 4px;
+	background: whitesmoke;
+   }
+
+   .tituloContatos p {
+
+	text-align: center;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.form-font {
+
+	color: whitesmoke;
+	font-size: 1.3em;
+}
+
+.btn-form {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #57cc99;
+  overflow: hidden;
+  border: 2px solid #57cc99;;
+ margin: auto;
+text-transform: uppercase;
+
+}
+
+.btn-form:hover {
+  color: #57cc99;
+}
+.btn-form:hover:after {
+  width: 100%;
+}
+.btn-form:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.checkbox {
+
+	border-radius: 50%;
+
+}
+.form-group input.form-control{
+background-color:#171320;
+color: whitesmoke;
+}
+.form-group textarea.form-control {
+background-color:#171320 ;
+color: whitesmoke;
+
+}
+
+.form-check input.checkboxes {
+
+	background-color: #171320 ;
+}
+
+input[type="checkbox" i] {
+
+    background: #171320 ;
+    cursor: pointer;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+    border-radius: 50%;
+    }
+
+@media (max-width:991px) {
+
+	.banner .img1 {
+
+		display: none;
+	}
+	.banner .titulo, .barra {
+
+		width: 100%;
+		padding: 40px;
+	}
+	.logo {
+
+		position: absolute;
+		top:40px;
+		left: 40px;
+	}
+.icon {
+	left: 40px;
+	bottom: 5px;
+}
+.toggle {
+	right: 50px;
+}
+
+
+}
+
+@media(max-width:500px) {
+
+.toggle {
+	right: 30px;
+}
+
+.curso .servicos .tarefa{
+
+	width: 100%;
+	max-width: 100%;
+	margin: 10px 0;
+	padding: 30px 20px;
+}
+.job {
+	width: 100%;
+	max-width: 100%;
+	padding: 20px 10px;
+	margin: 10px 0;
+}
+.tituloCurso h2 {
+	font-size: 1.8em;
+
+}
+.tituloProjeto h2 {
+	font-size: 1.8em;
+}
+.tituloContatos h2 {
+	font-size: 1.8em;
+}
+	.banner .titulo, .barra {
+
+width: 100%;
+padding: 10px;
+	}
+	.logo {
+		display: none;
+	}
+	.icon{
+left: 0px;
+
+	}
+	
+
+
+

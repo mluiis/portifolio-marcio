@@ -33,8 +33,8 @@ $form.addEventListener('submit', (event) => {
         let tel = document.querySelector('#tel').value
         let cidade = document.querySelector('#cidade').value
         let mensagem = document.querySelector('#mensagem').value
-        let pro = document.querySelector('#pro')
-        let academico = document.querySelector('#academico')
+        let pro = document.querySelector('#pro').value
+        let academico = document.querySelector('#academico').value
         
         
            let message = 'send?phone=' + phone + '&text=*_Olá, vim pelo seu portifólio!_*%0A%0A*Meu nome é:*%0A' + nome + '%0A*Esse é o meu e-mail*%0A' + email + '%0A*Meu número de telefone é esse:*%0A' + tel + '%0A*Eu falo da cidade de:*%0A' + cidade + '%0A*Quero um contato:*%0A' + tiposDeContato + '%0A*Meu Comentário:*%0A' + mensagem +  ''
